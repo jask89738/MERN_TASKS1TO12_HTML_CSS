@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+        body {
+            height: 100vh;
+            background: #671947;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 50vw;
+        }
+
+
+        form {
+            background: #510c37;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+
+        table {
+            width: 100%;
+        }
+
+
+        table tr {
+            margin-bottom: 10px;
+        }
+
+
+        table td {
+            padding: 5px;
+            color: whitesmoke;
+        }
+
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+
+        button {
+            padding: 10px 20px;
+            background-color:white;
+            color:black;
+            font-size: 20px;
+            background:white;
+            width: 20vw;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+
+        button:hover {
+            background-color: #510c37;
+        }
+        #about{
+            height: 10vh;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <form action="">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" placeholder="Your name"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" id="myEmail" placeholder="Your email"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" id="Mypassword"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="tel" name="tel" id="Mytel"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <label for="male">Male:</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="female">Female:</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="other">Other:</label>
+                        <input type="radio" name="gender" id="other">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td>
+                        <select name="myselect" id="myselect">
+                            <option value="">Select Language</option>
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="french">French</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zip Code:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>About:</td>
+                    <td><input type="text" placeholder="Write About yourself" id="about"></td>
+                </tr>
+            </table>
+            <button id="btn">Register</button>
+        </form>
+    </div>
+</body>
+
+
+</html>
+
+
+
+
